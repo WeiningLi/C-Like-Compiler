@@ -22,7 +22,15 @@ The semantic analysis phase of the CLike compiler. In particular that catches al
 Generates corresponding MIPS code of a CLIKE program
 
 ## Run the Compiler
-There is a CLike program named `foo.CLike` that can be used to try out the compiler, first run:  `cat foo.CLike | ./scan | ./parse | ./errorCheck`  to check if there is any error, if the program prints nothing, then there is no error and we can compile the program by entering `cat foo.CLike | ./scan | ./parse | ./codeGen`
+There is a CLike program named `foo.CLike` that can be used to try out the compiler, first run:  
+
+`cat foo.CLike | ./scan | ./parse | ./errorCheck`  
+
+to check if there is any error, if the program prints nothing, then there is no error and we can compile the program by entering:
+
+`cat foo.CLike | ./scan | ./parse | ./codeGen`
 
 ## Run the Assembler
-There is a MIPS program named `treeHeight.asm` that can be used to try out the assembler, run:  `./assemble < treeHeight.asm > treeHeight.mips`, then `treeHeight.mips` is a executable MIPS program
+There is a MIPS program named `treeHeight.asm` that can be used to try out the assembler, run:  
+
+`./assemble < treeHeight.asm > treeHeight.mips`, then `treeHeight.mips` is a executable MIPS program
